@@ -101,19 +101,16 @@ const renderContact = () => {
   app.innerHTML = '<div class="p-4 h-[200px] flex items-center justify-center">Temp for Contact</div>';
 };
 
-// fucntion to render the menu dynamically
 const renderMenu = () => {
   const menuContainer = document.querySelector('.justify-start');
   const ddMenuContainer = document.getElementById('ddMenu');
 
   const menuHTML = menuItems.map((item) => `<button onclick="setView('${item}')">${item}</button>`).join('');
-
   menuContainer.innerHTML = menuHTML;
 
   const ddMenuHTML = menuItems
     .map((item) => `<button class="block py-1 px-2" onclick="setView('${item}')">${item}</button>`)
     .join('');
-
   ddMenuContainer.innerHTML = ddMenuHTML;
 };
 

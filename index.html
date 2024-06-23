@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind example</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/dist/assets/index-c0a48f5c.css" />
   </head>
 
   <body class="dark:bg-gray-700 dark:text-white p-4">
@@ -25,20 +25,9 @@
             />
           </svg>
         </button>
-        <div class="absolute top-[56px] left-0 bg-blue-300 p-3 hidden w-full" id="ddMenu">
-          <button class="block py-1 px-2" onclick="setView('Calculator')">Calculator</button>
-          <button class="block py-1 px-2" onclick="setView('About')">About</button>
-          <button class="block py-1 px-2" onclick="setView('Contact')">Contact</button>
-        </div>
-        <div class="justify-start gap-4 hidden sm:flex">
-          <button onclick="setView('Calculator')">Calculator</button>
-          <button onclick="setView('About')">About</button>
-          <button onclick="setView('Contact')">Contact</button>
-        </div>
-        <div>
-          <button class="dark:hidden block" onclick="toggleTheme()">Dark</button>
-          <button class="hidden dark:block" onclick="toggleTheme()">Light</button>
-        </div>
+        <div class="absolute top-[56px] left-0 bg-blue-300 p-3 hidden w-full" id="ddMenu"></div>
+        <div class="justify-start gap-4 hidden sm:flex"></div>
+        <div></div>
       </div>
       <div class="py-4">
         <h1 class="text-3xl border-b-[10px] border-blue-300 pb-4">Calculator</h1>
